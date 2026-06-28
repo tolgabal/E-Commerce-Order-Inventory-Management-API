@@ -6,4 +6,5 @@ public class Order : BaseEntity
     public decimal TotalAmount {get;set;}
     public int ProductId {get;set;}
     public Product Product {get;set;} = null!;
+    public decimal UnitPrice {get;set;}
 }
