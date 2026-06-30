@@ -11,5 +11,5 @@ public interface IGenericRepository<T> where T : BaseEntity
     IQueryable<T> Where(Expression<Func<T,bool>> expression);
     Task AddAsync(T entity);
     void Update(T entity);
-    void remove(T entity);
+    void Remove(T entity);
 }
